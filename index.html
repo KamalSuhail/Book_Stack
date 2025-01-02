@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>BOOK STACK📚</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Path To Paradise</h2>
+            <h5>Muhammad Salman Mansurpuri</h5>
+            <p>Imam Tirmidhi narrates that the Prophet ﷺ ordered people to 'Be modest before Allah, as is His due.' The Prophet ﷺ then explained that 'Modesty before Allah means protecting the head and all that is in it; and protecting the stomach and all that is inside it. Furthermore, you should remember death and decay, for one whose eyes are set on the Hereafter keeps away from worldliness. One who accomplishes all of this is one who is modest before Allah, as is His due.'</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Description" id="book-description-input"></textarea>
+                <button id="add-book">Add</button>
+                <button id="cancel-popup">Cancel</button>
+            </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+  
+    <script src="script.js"></script>
+</body>
+</html>
